@@ -1,5 +1,5 @@
 import streamlit as st
-
+from snowflake.snowpark.functions import col
 
 # Write directly to the app
 st.title("customize your smoothie")
@@ -7,7 +7,7 @@ st.write(
     """choose the fruits in your custom smoothie
     """
 )
-from snowflake.snowpark.functions import col
+
 cnx =st.connection("snowflake")
 
 session=cnx.session()
