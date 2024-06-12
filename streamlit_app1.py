@@ -1,7 +1,7 @@
 import streamlit as st
+import requests
 from snowflake.snowpark.functions import col
 
-import requests
 # Write directly to the app
 st.title("customize your smoothie")
 st.write(
